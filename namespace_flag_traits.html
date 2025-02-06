@@ -107,8 +107,11 @@ Variables</h2></td></tr>
 <tr class="memdesc:a8134574a3587849ef44db8d03e37228b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows player to obtain level 4 on their weapons.  <br /></td></tr>
 <tr class="separator:a8134574a3587849ef44db8d03e37228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21edb56420d85d8ed51bb776ce50f2ad" id="r_a21edb56420d85d8ed51bb776ce50f2ad"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21edb56420d85d8ed51bb776ce50f2ad">IFRAMES_BOOST</a> = &quot;iframes_boost&quot;</td></tr>
-<tr class="memdesc:a21edb56420d85d8ed51bb776ce50f2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases player's immunity frames and prevents knockback from taking damage.  <br /></td></tr>
+<tr class="memdesc:a21edb56420d85d8ed51bb776ce50f2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases player's immunity frames.  <br /></td></tr>
 <tr class="separator:a21edb56420d85d8ed51bb776ce50f2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a7d9f20758a7959d4a8290b8c3423db" id="r_a3a7d9f20758a7959d4a8290b8c3423db"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a7d9f20758a7959d4a8290b8c3423db">NO_KNOCKBACK</a> = &quot;no_knockback&quot;</td></tr>
+<tr class="memdesc:a3a7d9f20758a7959d4a8290b8c3423db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prevents knockback from taking damage.  <br /></td></tr>
+<tr class="separator:a3a7d9f20758a7959d4a8290b8c3423db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e9178c73883c1d762e71ea8a8b64f86" id="r_a7e9178c73883c1d762e71ea8a8b64f86"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e9178c73883c1d762e71ea8a8b64f86">KO_PREVENTION</a> = &quot;ko_prevention&quot;</td></tr>
 <tr class="memdesc:a7e9178c73883c1d762e71ea8a8b64f86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves player from one hit kills by setting their HP to 1 when taking too much damage.  <br /></td></tr>
 <tr class="separator:a7e9178c73883c1d762e71ea8a8b64f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -217,9 +220,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ade72ddf7ad4f99cd6bfedba580f44ee4" id="r_ade72ddf7ad4f99cd6bfedba580f44ee4"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade72ddf7ad4f99cd6bfedba580f44ee4">BOOSTER_FUEL_BOOST</a> = &quot;booster_fuel_boost&quot;</td></tr>
 <tr class="memdesc:ade72ddf7ad4f99cd6bfedba580f44ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies amount of booster fuel.  <br /></td></tr>
 <tr class="separator:ade72ddf7ad4f99cd6bfedba580f44ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6678b6b793a347cd0d00e5640887b0df" id="r_a6678b6b793a347cd0d00e5640887b0df"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6678b6b793a347cd0d00e5640887b0df">DONT_SLOW_ON_BOOST_END</a> = &quot;dont_slow_on_boost_end&quot;</td></tr>
-<tr class="memdesc:a6678b6b793a347cd0d00e5640887b0df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Preserves momentum on ending Booster 2.0-style boosting.  <br /></td></tr>
-<tr class="separator:a6678b6b793a347cd0d00e5640887b0df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ccec3debac2183b15a8eb8f7e008c3d" id="r_a2ccec3debac2183b15a8eb8f7e008c3d"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ccec3debac2183b15a8eb8f7e008c3d">ACID_IMMUNITY</a> = &quot;acid_immunity&quot;</td></tr>
 <tr class="memdesc:a2ccec3debac2183b15a8eb8f7e008c3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides immunity to harmful water in certain stages.  <br /></td></tr>
 <tr class="separator:a2ccec3debac2183b15a8eb8f7e008c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -412,9 +412,6 @@ Variables</h2></td></tr>
 <tr class="memitem:ae9b8454d39db38c40db67693dfc059f0" id="r_ae9b8454d39db38c40db67693dfc059f0"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9b8454d39db38c40db67693dfc059f0">VELOCITY_BASED_JUMP</a> = &quot;velocity_based_jump&quot;</td></tr>
 <tr class="memdesc:ae9b8454d39db38c40db67693dfc059f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Increases the jump force with player's horizontal velocity.  <br /></td></tr>
 <tr class="separator:ae9b8454d39db38c40db67693dfc059f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3565644ba7f6e88d073d91055db6fb87" id="r_a3565644ba7f6e88d073d91055db6fb87"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3565644ba7f6e88d073d91055db6fb87">INFINITE_MINING</a> = &quot;infinite_mining&quot;</td></tr>
-<tr class="memdesc:a3565644ba7f6e88d073d91055db6fb87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Makes mining weapons not consume any ammunition.  <br /></td></tr>
-<tr class="separator:a3565644ba7f6e88d073d91055db6fb87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d661e43f8403d5ca6af00b2aedf2ac3" id="r_a4d661e43f8403d5ca6af00b2aedf2ac3"><td class="memItemLeft" align="right" valign="top">constexpr const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d661e43f8403d5ca6af00b2aedf2ac3">STAGE_COMPLETE_AMMO_BOOST</a> = &quot;stage_complete_ammo_boost&quot;</td></tr>
 <tr class="memdesc:a4d661e43f8403d5ca6af00b2aedf2ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds additional ammo to specific weapons at beginning of new stage.  <br /></td></tr>
 <tr class="separator:a4d661e43f8403d5ca6af00b2aedf2ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -692,6 +689,12 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets boosting method to Booster 2.0 (instant high speed in four cardinal directions) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">no_slowdown</td><td>A boolean toggle on whenever to preserve momentum on ending boosting or not. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#ab1fc9621a4899baa02aee3949ac5676d" title="Allows player to boost with certain amount of base fuel.">CAN_BOOST</a> </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
@@ -839,7 +842,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Buffs Machine Gun weapon by making it deal more damage and apply more velocity even when not at level 3. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add damage boost parameters. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add damage boost parameters. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -962,8 +965,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Makes dashing ability go extremely fast in one direction until hitting the wall, like a fierce cat leap. </p>
-<dl class="section remark"><dt>Remarks</dt><dd>This trait's dash is <a class="el" href="#a18edbb56679908d18a34dc32799f03bd">empowered</a> (but does 3 more damage) and <a class="el" href="#a48e2146bebf12559337ca6e76a446e79">doesn't have gravity</a>. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo</a></b></dt><dd>Remove gravity ignoring part of it. </dd></dl>
+<dl class="section remark"><dt>Remarks</dt><dd>This trait's dash is <a class="el" href="#a18edbb56679908d18a34dc32799f03bd">empowered</a> (but does 3 more damage). </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">speed</td><td>The speed multiplier for cat leaping dash. </td></tr>
@@ -996,7 +998,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Reduces player's falling terminal velocity. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo</a></b></dt><dd>Add parameter for velocity multiplier. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo</a></b></dt><dd>Add parameter for velocity multiplier. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -1312,33 +1314,7 @@ Variables</h2></td></tr>
 
 <p>Allows player to enter special "sprinting dash" state, when holding Ability key. </p>
 <p>When "sprinting dash" is active, the player moves and turns much quicker, becomes much floatier and can double jump.</p>
-<p>It also allows to dodge one direct hit with a cooldown. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo</a></b></dt><dd>Add parameters for hit cooldown and velocity. </dd></dl>
-<dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
-
-</div>
-</div>
-<a id="a6678b6b793a347cd0d00e5640887b0df" name="a6678b6b793a347cd0d00e5640887b0df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6678b6b793a347cd0d00e5640887b0df">&#9670;&#160;</a></span>DONT_SLOW_ON_BOOST_END</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* FlagTraits::DONT_SLOW_ON_BOOST_END = &quot;dont_slow_on_boost_end&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Preserves momentum on ending Booster 2.0-style boosting. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000021">Todo</a></b></dt><dd>Merge with <a class="el" href="#ae692fe9bcbaaab3a72d6498971159b52" title="Sets boosting method to Booster 2.0 (instant high speed in four cardinal directions)">BOOSTER_2_0</a>. </dd></dl>
+<p>It also allows to dodge one direct hit with a cooldown. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo</a></b></dt><dd>Add parameters for hit cooldown and velocity. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -1479,7 +1455,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000023">Todo</a></b></dt><dd>Add parameters for range and projectile. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000017">Todo</a></b></dt><dd>Add parameters for range and projectile. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -1808,7 +1784,7 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
 
 <p>Allows player to flip their gravity with cooldown, making them fall towards ceiling instead of floor. </p>
 <dl class="section note"><dt>Note</dt><dd>The weapon shoot directions will also be reversed. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000020">Todo</a></b></dt><dd>Add parameter for cooldown. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo</a></b></dt><dd>Add parameter for cooldown. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -1954,7 +1930,7 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
 </div><div class="memdoc">
 
 <p>Enables hunger system, turning player's health bar into food bar. </p>
-<p>When active, the health bar will get unique, yellow-ish color and will slowly tick down. The special food pickups will be generated sometimes, when killing enemies. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000013">Todo</a></b></dt><dd>Add parameters for hunger tick rate and food drop chance. </dd></dl>
+<p>When active, the health bar will get unique, yellow-ish color and will slowly tick down. The special food pickups will be generated sometimes, when killing enemies. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd>Add parameters for hunger tick rate and food drop chance. </dd></dl>
 
 </div>
 </div>
@@ -1980,7 +1956,7 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
 
 <p>Allows player to slide on the ground without losing momentum, while holding Ability key. </p>
 <dl class="section note"><dt>Note</dt><dd>When at max velocity, the jump height will be significantly increased. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000015">Todo</a></b></dt><dd>Add parameters for jump height modifier and max speed. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>Add parameters for jump height modifier and max speed. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2005,11 +1981,15 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
 </table>
 </div><div class="memdoc">
 
-<p>Increases player's immunity frames and prevents knockback from taking damage. </p>
+<p>Increases player's immunity frames. </p>
 <dl class="section note"><dt>Note</dt><dd>When taking 1 damage, the immunity frames will be actually decreased. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000009">Todo</a></b></dt><dd><p class="startdd">Add modifiers for the thing. </p>
-<p class="enddd">Split into <a class="el" href="#a21edb56420d85d8ed51bb776ce50f2ad" title="Increases player&#39;s immunity frames and prevents knockback from taking damage.">IFRAMES_BOOST</a> and KNOCKBACK_IMMUNE. </p>
-</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">modifier</td><td>The modifier for immunity frames. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">modifier_light</td><td>The modifier for immunity frames received for taking 1 damage. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2045,32 +2025,6 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
   </table>
   </dd>
 </dl>
-<dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
-
-</div>
-</div>
-<a id="a3565644ba7f6e88d073d91055db6fb87" name="a3565644ba7f6e88d073d91055db6fb87"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3565644ba7f6e88d073d91055db6fb87">&#9670;&#160;</a></span>INFINITE_MINING</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* FlagTraits::INFINITE_MINING = &quot;infinite_mining&quot;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Makes mining weapons not consume any ammunition. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000026">Todo</a></b></dt><dd>Merge with <a class="el" href="#a435246a7ccc4386a528a1e425d447b39" title="Modifies the maximum amount of ammo mining weapons can have.">MINING_STORAGE_BOOST</a>. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2156,7 +2110,7 @@ Gatling Gun will have its bullets increased by 1.5x on successful proc. </dd></d
 <p>Allows player to jump on spikes to avoid them. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>This trait's jump will count as usage of <a class="el" href="#a2a5a7d3fa86c51878b48b250799e5919">double jump</a>. </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>The jump velocity will be lower, when activating this trait. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000022">Todo</a></b></dt><dd>Add parameter for jump velocity modifier. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo</a></b></dt><dd>Add parameter for jump velocity modifier. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2240,10 +2194,10 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">speed_boost</td><td>The modifier applied to player's speed, when they are at 0 HP. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flag_mark</td><td>The flag used to mark the usage of this trait. <em>Defaults to 4301.</em> </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>Add parameter for last stand tracker flag. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2485,7 +2439,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Makes player take less damage, when they are below certain amount of health. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo</a></b></dt><dd>Add parameters for threshold and damage reduction. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>Add parameters for threshold and damage reduction. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2751,7 +2705,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 
 <p>Allows player to teleport into empty spaces with mouse control. </p>
 <dl class="section note"><dt>Note</dt><dd>The player will be stunned during teleportation process. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000014">Todo</a></b></dt><dd>Add parameters for stun time and cooldown. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000010">Todo</a></b></dt><dd>Add parameters for stun time and cooldown. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2810,6 +2764,31 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
   </table>
   </dd>
 </dl>
+<dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
+
+</div>
+</div>
+<a id="a3a7d9f20758a7959d4a8290b8c3423db" name="a3a7d9f20758a7959d4a8290b8c3423db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a7d9f20758a7959d4a8290b8c3423db">&#9670;&#160;</a></span>NO_KNOCKBACK</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* FlagTraits::NO_KNOCKBACK = &quot;no_knockback&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel constexpr">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prevents knockback from taking damage. </p>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2886,7 +2865,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 
 <p>Moves Nemesis bullet's initial position upwards. </p>
 <dl class="section remark"><dt>Remarks</dt><dd>Synergizes with <a class="el" href="#ae8a629e91e3637e882649a72eb7c6803" title="Changes Nemesis&#39;s bullets to spend its &quot;hitpoints&quot; to break blocks instead of instantly disappearing.">MULTI_BLOCK_BREAKING</a> to allow breaking 2-block-wide corridors. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000024">Todo</a></b></dt><dd>Add parameters for exact value. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000018">Todo</a></b></dt><dd>Add parameters for exact value. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2969,7 +2948,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 
 <p>Makes player destroy any "projectiles" they contact during the dash. </p>
 <dl class="section note"><dt>Note</dt><dd>Projectiles are entities that have 1 HP when trait is applied. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Probably should make a NPC trait for projectiles... </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>Probably should make a NPC trait for projectiles... </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -2995,7 +2974,12 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Prompts Fireball projectiles to spew smaller flames when travelling. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000004">Todo</a></b></dt><dd>Add parameter for firerate. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">rate</td><td>The delay between each flame in frames. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -3268,7 +3252,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 
 <p>Splits Snake's bullet into two bullets, going in synchronized patterns, and makes Snake weapon autofire. </p>
 <dl class="section note"><dt>Note</dt><dd>Split Snake bullets have halfed damage. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo</a></b></dt><dd>Split into <a class="el" href="#a21d9494dd216c909b8e4eb3d4223dace" title="Splits Snake&#39;s bullet into two bullets, going in synchronized patterns, and makes Snake weapon autofi...">SNAKE_EMPOWER</a> and SNAKE_AUTOFIRE. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>Split into <a class="el" href="#a21d9494dd216c909b8e4eb3d4223dace" title="Splits Snake&#39;s bullet into two bullets, going in synchronized patterns, and makes Snake weapon autofi...">SNAKE_EMPOWER</a> and SNAKE_AUTOFIRE. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -3355,7 +3339,12 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Makes player invulnerable to spikes once certain velocity is reached. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000006">Todo</a></b></dt><dd>Add parameters for velocity threshold. </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">threshold</td><td>The horizontal threshold for spike evading in subpixels. </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -3593,7 +3582,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Allows player to charge up their next sword weapon swing, giving it increased damage and empowered state on successful hit. </p>
-<p>When empowered, swords will swing significantly faster and fire additional projectiles. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000012">Todo</a></b></dt><dd>Probably needs a lot more parameters, like charge duration, projectile type and damage multiplier. </dd></dl>
+<p>When empowered, swords will swing significantly faster and fire additional projectiles. </p><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo</a></b></dt><dd>Probably needs a lot more parameters, like charge duration, projectile type and damage multiplier. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -4065,7 +4054,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Makes player rise out of water instead of sinking, when not holding the Ability key. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000025">Todo</a></b></dt><dd>Add parameter for rising speed modifier. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000019">Todo</a></b></dt><dd>Add parameter for rising speed modifier. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
@@ -4252,7 +4241,7 @@ Entities with IMMUNE_TO_KNOCKBACK NPC tag will not be affected. </dd></dl>
 </div><div class="memdoc">
 
 <p>Makes player's hitbox significantly smaller, allowing them to dodge with more leeway. </p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000007">Todo</a></b></dt><dd>Add parameters for hitbox proportions. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">Todo</a></b></dt><dd>Add parameters for hitbox proportions. </dd></dl>
 <dl class="section since"><dt>Since</dt><dd>1.45 </dd></dl>
 
 </div>
